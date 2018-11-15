@@ -13,9 +13,18 @@ public class Model {
                 return number1/number2;
             case "x" :
                 return number1*number2;
+            case "." :
+                return number1+number2/100;
+        }
+        return 0;
+    }
+
+    public double calculate1(double number1, String operator) {
+        switch (operator) {
             case "%" :
                 return number1/100;
         }
         return 0;
     }
+
 }
